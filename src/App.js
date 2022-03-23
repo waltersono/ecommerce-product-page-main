@@ -13,8 +13,8 @@ const App = () => {
       <Drawer />
 
       <Routes>
-        <Route exact path="/" element={<MainLayout />}>
-          <Route exact path="single" element={<SinglePage />} />
+        <Route path="/" element={<MainLayout />}>
+          <Route path="" element={<SinglePage />} />
         </Route>
       </Routes>
     </React.Fragment>
