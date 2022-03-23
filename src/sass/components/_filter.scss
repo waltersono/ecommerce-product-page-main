@@ -1,0 +1,42 @@
+.filter {
+  width: 18rem;
+  position: relative;
+
+  &__selected {
+    border: 1px solid $color-neutral-3;
+    background-color: transparent;
+    outline: none;
+    padding: 1.2rem 2.2rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+
+  &__list {
+    border: 1px solid $color-neutral-3;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    position: absolute;
+    width: 100%;
+    display: none;
+  }
+
+  &__item {
+    padding: 1rem 2rem;
+    &:not(:last-child) {
+      border-bottom: 1px solid $color-neutral-3;
+    }
+
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
+}

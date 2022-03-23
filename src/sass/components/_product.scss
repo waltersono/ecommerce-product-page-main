@@ -1,0 +1,27 @@
+.product {
+  width: 25rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  overflow: hidden;
+  border: 0.1rem solid rgba(0, 0, 0, 0.19);
+
+  &__header {
+    height: 19rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+
+  &__footer {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > button {
+      width: 100%;
+      &:first-child {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

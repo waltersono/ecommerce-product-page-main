@@ -1,0 +1,35 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  &--show {
+    z-index: $zindex-sticky;
+  }
+
+  &--opacity-8 {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  &--opacity-7 {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  &--opacity-6 {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  &--opacity-5 {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  &--opacity-3 {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  &--opacity-2 {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  &--opacity-1 {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}

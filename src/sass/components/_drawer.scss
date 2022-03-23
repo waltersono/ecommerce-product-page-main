@@ -1,0 +1,37 @@
+.drawer {
+  display: none;
+}
+
+@include respond(tab-port) {
+  .drawer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -25rem;
+    z-index: $zindex-modal;
+    background-color: white;
+    width: 25rem;
+    height: 100%;
+    padding: 2rem;
+    transition: all 0.2s ease-out;
+
+    &--show {
+      left: 0;
+    }
+
+    &__close {
+      margin-bottom: 4rem;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    &__link {
+      color: $color-neutral-1;
+      font-weight: bold;
+    }
+  }
+}

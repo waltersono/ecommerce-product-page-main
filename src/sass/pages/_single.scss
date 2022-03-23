@@ -1,0 +1,139 @@
+.single {
+  padding: 5rem 1rem;
+  &__container {
+    max-width: 100rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+}
+
+.details {
+  margin-left: 4rem;
+  &__name {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: $color-neutral-1;
+  }
+
+  &__description {
+    color: $color-neutral-2;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+
+  &__price {
+    font-weight: bold;
+
+    &-box {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    &-now {
+      font-size: 2.5rem;
+      margin-right: 2rem;
+      color: $color-neutral-1;
+    }
+
+    &-discount {
+      color: $color-primary-1;
+    }
+
+    &-before {
+      color: $color-neutral-3;
+      text-decoration: line-through;
+    }
+  }
+
+  &__controls {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  &__quantity {
+    &-box {
+    }
+
+    &-btn {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    &-icon {
+      width: 1rem;
+    }
+
+    &-value {
+      text-align: center;
+      width: 4rem;
+      border: none;
+      outline: none;
+    }
+  }
+
+  &__btn {
+    padding: 1.2rem 8rem;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+.details input::-webkit-outer-spin-button,
+.details input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.details input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@include respond(tab-port) {
+  .single {
+    padding: 5rem 0;
+
+    &__container {
+      flex-direction: column;
+    }
+  }
+
+  .details {
+    max-width: 40rem;
+    margin: 2rem 0;
+
+    &__price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &__quantity {
+      &-box {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+}
+
+@include respond(phone) {
+  .single {
+    padding: 0;
+  }
+  .details {
+    padding: 0 2rem;
+  }
+}

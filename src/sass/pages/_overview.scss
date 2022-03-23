@@ -1,0 +1,27 @@
+.overview {
+  max-width: 120rem;
+  margin: 4rem auto;
+  width: 90%;
+
+  &__row {
+    display: grid;
+    //grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-top: 2rem;
+
+    & > .product {
+      margin-right: 3rem;
+    }
+  }
+}
+
+.filter__block {
+  display: flex;
+  margin-bottom: 10rem;
+
+  & > .filter {
+    margin-right: 2rem;
+  }
+}

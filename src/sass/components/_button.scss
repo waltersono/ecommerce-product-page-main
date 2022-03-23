@@ -1,0 +1,29 @@
+.btn {
+  border: none;
+  outline: none;
+  padding: 0.5em 1em;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: all 0.2s ease-out;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &--primary {
+    background-color: $color-primary-1;
+    color: $color-neutral-4;
+  }
+
+  &--lg {
+    padding: 1rem 2rem;
+  }
+
+  &__icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.5rem;
+  }
+}

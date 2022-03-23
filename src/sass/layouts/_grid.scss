@@ -1,0 +1,12 @@
+.grid {
+  display: grid;
+  &-lg-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-lg-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-lg-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

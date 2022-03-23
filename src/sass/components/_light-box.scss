@@ -1,0 +1,64 @@
+.lightbox {
+  z-index: $zindex-modal;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+
+  &--show {
+    display: block;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    &-icon {
+      width: 3rem;
+      height: 3rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  & .preview {
+    &__img {
+      &:hover {
+        cursor: default;
+        opacity: 1;
+      }
+    }
+    &__controls {
+      position: absolute;
+      display: block;
+      top: 40%;
+      left: 50%;
+      width: 110%;
+      transform: translate(-50%, -50%);
+      &-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &-btn {
+        background-color: $color-neutral-4;
+        border-radius: 50%;
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > img {
+          height: 1.2rem;
+          width: 1.2rem;
+        }
+      }
+    }
+  }
+}
