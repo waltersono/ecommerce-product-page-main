@@ -11,12 +11,11 @@ const App = () => {
       <Menu />
       <Overlay />
       <Drawer />
-      <SinglePage />
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route path="" element={<SinglePage />} />
         </Route>
-      </Routes> */}
+      </Routes>
     </React.Fragment>
   );
 };
