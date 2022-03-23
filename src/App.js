@@ -11,11 +11,7 @@ const App = () => {
       <Menu />
       <Overlay />
       <Drawer />
-      <Routes>
-        <Route path="/" element={<MainLayout />}>
-          <Route path="" element={<SinglePage />} />
-        </Route>
-      </Routes>
+      <SinglePage />
     </React.Fragment>
   );
 };
